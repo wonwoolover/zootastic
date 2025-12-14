@@ -58,7 +58,7 @@ onAuthStateChanged(auth, (user) => {
         }
 
         const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#">Sign Out</a></li>`;
-        const DashboardBtn = document.title == "Home" ? `<li><a class="dropdown-item" id="DashboardBtn" href="pages/dashboard.html"> Dashboard</a></li>`: `<li><a class="dropdown-item" id="DashboardBtn" href="dashboard.html"> Dashboard</a></li>`
+        const DashboardBtn = document.title == "Home" ? `<li><a class="dropdown-item" id="DashboardBtn" href="Pages/dashboard.html"> Dashboard</a></li>`: `<li><a class="dropdown-item" id="DashboardBtn" href="dashboard.html"> Dashboard</a></li>`
         const dropdownMenu = document.querySelector(".dropdown-menu-end");
         if (dropdownMenu) {
             dropdownMenu.innerHTML += SignOutBtn;
@@ -912,6 +912,7 @@ function feedBackPage() {
 
         }
     });
+
 
 
 
