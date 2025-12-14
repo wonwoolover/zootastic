@@ -2468,7 +2468,7 @@ html{
 }
 /* search */
 .zoobody {
-    background: url("../images1/ban.jpg") center/cover fixed no-repeat;
+    background: url("images1/ban.jpg") center/cover fixed no-repeat;
 }
 .zoosearch {
     background: #f3ffe6;
@@ -2928,5 +2928,6 @@ html{
     border-radius: 100%;
     background-color: #B0CE88;
     border-block-start-width: 50px;
+
 
 }
