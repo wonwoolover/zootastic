@@ -428,7 +428,7 @@ function SignUpPage() {
         if (pfpInput.files && pfpInput.files[0]) {
             pfpPreview.src = URL.createObjectURL(pfpInput.files[0]);
         } else {
-            pfpPreview.src = "images/pfinspo.jpg";
+            pfpPreview.src = document.title !== "Home" ? "../images6/pfinspo.jpg" : "images6/pfinspo.jpg";
         }
     }
 
@@ -608,7 +608,7 @@ function SignInPage() {
         if (pfpInput.files && pfpInput.files[0]) {
             pfpPreview.src = URL.createObjectURL(pfpInput.files[0]);
         } else {
-            pfpPreview.src = "images/pfinspo.jpg";
+            pfpPreview.src =  document.title !== "Home" ? "../images6/pfinspo.jpg" : "images6/pfinspo.jpg";
         }
     }
 
@@ -917,3 +917,4 @@ function feedBackPage() {
 
 
 }
+
