@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="icon" type="image/jpg" href="images/zootastic_logo.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg custom-nav py-2 sticky-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+
+                <!-- HAMBURGER LEFT -->
+                <button class="navbar-toggler shadow-none border-0 text-light me-2" type="button" title="toggler"
+                    data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../images/zootastic_logo.svg" class="nav-logo me-2 rounded-circle" alt="logo">
+                    <span class="brand-text">Zootastic</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navMenu">
+                <ul class="navbar-nav gap-4">
+
+                    <li class="nav-item"><a class="nav-link my-link" href="../index.html" data-page="home">Home</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link my-link" href="animals.html" data-page="animals">Animals</a>
+                        <div class="mega-dropdown dropdown-menu border-0 shadow-lg p-4">
+
+                            <div class="container-fluid">
+                                <div class="row g-4">
+
+                                    <!-- LEFT SIDE -->
+                                    <div class="col-md-4">
+                                        <div class="p-3 rounded mega-bg-one">
+                                            <h5 class="fw-bold mb-3">Types of Animals</h5>
+
+                                            <a href="tiger.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Tigers</a>
+                                            <a href="otter.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Otters</a>
+                                            <a href="snake.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Snakes</a>
+                                            <a href="peacock.html"
+                                                class="d-block mb-3 text-decoration-none text-light fw-semibold">Peacocks</a>
+
+                                            <a href="animals.html" class="fw-bold text-decoration-none text-light">View all animals
+                                                →</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- RIGHT SIDE -->
+                                    <div class="col-md-8">
+                                        <div class="row g-3">
+                                            <!-- animal card -->
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images7/rd11.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="deer.html" class="fw-bold text-decoration-none">Deers</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images3/ele3.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="elephant.html" class="fw-bold text-decoration-none">Elephants</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images1/bear5.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="bear.html" class="fw-bold text-decoration-none">Bears</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images8/zeb1.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="zebra.html" class="fw-bold text-decoration-none">Zebras</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </li>
+
+                    <!-- Eco Desktop Mega -->
+                    <li class="nav-item position-relative eco-parent">
+                        <a class="nav-link my-link" href="eco_friendly.html" data-page="eco">Eco-friendly practices</a>
+                        <!-- MEGA MENU 2.0-->
+                        <div class="eco-dropdown">
+                            <div class="eco-header">
+                                <h4>Explore Eco-Friendly Practices</h4>
+                                <p>Learn how to be healthy, clean, and encouraging!</p>
+                                <a href="eco_friendly.html" class="eco-main-btn">View All Eco Practices →</a>
+                            </div>
+
+                            <div class="eco-cards">
+
+                                <div class="eco-card">
+                                    <!-- <h5>Animal Care</h5> -->
+                                    <p>Animal care practices include providing a benefitcial diet and fresh water, and
+                                        so on.</p>
+                                    <img src="../images6/otter2.jpg"
+                                        class="animal-img" alt="hover4">
+                                </div>
+
+                                <div class="eco-card">
+                                    <!-- <h5>Pest Management</h5> -->
+                                    <p>Pest management practices include regularly clean ups to remove food residues
+                                        that attract pests. </p>
+                                    <img src="../images4/feeding.jpg" class="animal-img"
+                                        alt="hover4">
+                                </div>
+
+                                <div class="eco-card">
+                                    <!-- <h5>Visitor Engagement</h5> -->
+                                    <p>Visitor engagement strategies include integrating photo opportunities to offer
+                                        better experience.</p>
+                                    <img src="../images5/kmss.jpg" class="animal-img" alt="hover4">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link my-link" href="feedback.html" data-page="feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link my-link" href="about.html" data-page="about">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <form class="d-none d-lg-flex me-3 search-wrapper">
+                <div class="icon-search">
+                    <i class="bi bi-search actual-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="search-type">
+                    <i class="bi bi-x clear"></i>
+                </div>
+            </form>
+
+            <!-- ACCOUNT DROPDOWN -->
+            <div class="dropdown account-dropdown">
+                <a href="#" class="d-flex align-items-center dropdown-toggle account-btn" data-bs-toggle="dropdown">
+                    <img src="../images6/pfinspo.jpg" class="profile-icon" alt="profile">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="sign-in.html">Sign In</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MOBILE OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-start custom-offcanvas" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light">Menu</h5>
+            <button class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" title="close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="list-unstyled">
+
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+
+                <!-- ANIMALS ACCORDION (with cards!) -->
+                <li class="mb-3">
+                    <button class="accordion-button collapsed mobile-accordion" data-bs-toggle="collapse"
+                        data-bs-target="#animalsCollapse">Animals</button>
+
+                    <div id="animalsCollapse" class="accordion-collapse collapse">
+                        <div class="p-2 ps-3">
+
+                            <a class="mobile-sub" href="tiger.html">Tigers</a>
+                            <a class="mobile-sub" href="otter.html">Otters</a>
+                            <a class="mobile-sub" href="snake.html">Snakes</a>
+                            <a class="mobile-sub" href="peacock.html">Peacocks</a>
+
+                            <hr class="text-light">
+
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images7/rd11.jpg" class="img-fluid rounded mb-1" alt="hover1">
+                                        <p class="small text-white">Deers</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images3/ele4.jpg" class="img-fluid rounded mb-1" alt="hover2">
+                                        <p class="small text-white">Elephants</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images1/bear5.jpg" class="img-fluid rounded mb-1" alt="hover4">
+                                        <p class="small text-white"> Bears</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images8/zeb1.jpg" class="img-fluid rounded mb-1" alt="hover5">
+                                        <p class="small text-white">Zebras</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="text-light">
+                            <a class="mobile-sub" href="animals.html">View All Animals →</a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ECO ACCORDION -->
+                <li class="mb-3">
+                    <button class="accordion-button collapsed mobile-accordion" data-bs-toggle="collapse"
+                        data-bs-target="#ecoCollapse">Eco-friendly practices</button>
+
+                    <div id="ecoCollapse" class="accordion-collapse collapse">
+                        <hr class="text-light">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Animal care practices include providing a
+                                        benefitcial diet and fresh water, and so on.</p>
+                                    <img src="../images6/otter2.jpg"
+                                        alt="planckendael" class="img-fluid rounded mb-1">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Pest management practices include regularly clean
+                                        ups to remove food residues that attract pests.</p>
+                                    <img src="../images4/feeding.jpg"
+                                        class="img-fluid rounded mb-1" alt="cleanup">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Visitor engagement strategies include integrating
+                                        photo opportunities to offer better experience.</p>
+                                    <img src="../images5/kmss.jpg" class="img-fluid rounded mb-1"
+                                        alt="lion">
+                                </div>
+                            </div>
+                            <a class="mobile-sub" href="eco_friendly.html">View All Practices →</a>
+                            <hr class="text-light">
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="feedback.html" class="mobile-link">Feedback</a></li>
+                <li><a href="about.html" class="mobile-link">About Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <div class="row feedback-overview gx-4 gy-4">
+        <div class="col-lg-6 col-md-6 col-sm-12  ">
+
+
+            <form action="#" id="write-feedback" class="card feedback-form shadow-lg m-4">
+                <div class="card-body p-4">
+                    <h2 class="fw-bold mb-4">Leave feedback for our website!</h2>
+                    <div class="d-flex justify-content-start align-items-center ">
+                        <img src="../images/pfinspo.jpg" class="profile-icon" alt="profile"> <span
+                            class="usernameDisplay ms-2">User</span>
+                        <div class="star-rating-container ms-2 ">
+
+                            <input class="form-check-input feedbackStars" type="radio" id="5Star" value="5"
+                                name="feedbackStars">
+                            <label class="form-check-label" for="5Star" title="star"><i
+                                    class="bi bi-star-fill"></i></label>
+                            <input class="form-check-input feedbackStars" type="radio" id="4Star" value="4"
+                                name="feedbackStars">
+                            <label class="form-check-label" for="4Star" title="star"><i
+                                    class="bi bi-star-fill"></i></label>
+                            <input class="form-check-input feedbackStars" type="radio" id="3Star" value="3"
+                                name="feedbackStars">
+                            <label class="form-check-label" for="3Star" title="star"><i
+                                    class="bi bi-star-fill"></i></label>
+                            <input class="form-check-input feedbackStars" type="radio" id="2Star" value="2"
+                                name="feedbackStars">
+                            <label class="form-check-label" for="2Star" title="star"><i
+                                    class="bi bi-star-fill"></i></label>
+
+                            <input class="form-check-input feedbackStars" type="radio" id="1Star" value="1"
+                                name="feedbackStars">
+                            <label class="form-check-label" for="1Star" title="star"><i
+                                    class="bi bi-star-fill"></i></label>
+
+                        </div>
+                    </div>
+
+
+
+                    <input type="text" name="Title" id="feedbackTitle" class="form-control mt-4" placeholder="Title.."
+                        required maxlength="25">
+                    <textarea class="form-control mt-1" placeholder="Write your feedback..." required id="commentInput"
+                        maxlength="100"></textarea>
+                    <button type="submit" class="btn btn-outline-success mt-4" id="submitFeedbackBtn">Upload</button>
+                </div>
+
+            </form>
+
+
+
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 ">
+            <div class="feedback-scorecard m-4">
+                <div class=" p-4 ">
+                    <h2 class="card-title mb-4 border-bottom pb-2">Rating Score</h2>
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-5 text-center ">
+                            <h3 class="display-3 fw-bold text-success mb-1" id="RatingAverage">?.??</h3>
+                            <div class="mb-2">
+                                <span class="text-secondary h4" id="5StarIndicator"><i
+                                        class="bi bi-star-fill text-warning"></i></span>
+                                <span class="text-secondary h4" id="4StarIndicator"><i
+                                        class="bi bi-star-fill text-warning"></i></span>
+                                <span class="text-secondary h4" id="3StarIndicator"><i
+                                        class="bi bi-star-fill text-warning"></i></span>
+                                <span class="text-secondary h4" id="2StarIndicator"><i
+                                        class="bi bi-star-fill text-warning"></i></span>
+                                <span class="text-secondary h4" id="1StarIndicator"><i
+                                        class="bi bi-star-fill"></i></span>
+                            </div>
+                            <p class="text-muted mb-0">Total <span id="feedbackQuantity" class="fw-bold">...</span>
+                                Reviews</p>
+                        </div>
+
+                        <div class="col-lg-8 col-md-7 pt-4 pt-md-0">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="me-2 text-nowrap">5 <small>Star</small></span>
+                                <div class="progress flex-grow-1" role="progressbar" title="5star">
+                                    <div class="progress-bar bg-success" id="5-star-bar"></div>
+                                </div>
+                                <small class="ms-2 text-muted fw-bold" id="5-star-results">0%</small>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="me-2 text-nowrap">4 <small>Star</small></span>
+                                <div class="progress flex-grow-1" role="progressbar" title="4star">
+                                    <div class="progress-bar bg-success" id="4-star-bar"></div>
+                                </div>
+                                <small class="ms-2 text-muted fw-bold" id="4-star-results">0%</small>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="me-2 text-nowrap">3 <small>Star</small></span>
+                                <div class="progress flex-grow-1" role="progressbar" title="3star">
+                                    <div class="progress-bar bg-success" id="3-star-bar"></div>
+                                </div>
+                                <small class="ms-2 text-muted fw-bold" id="3-star-results">0%</small>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="me-2 text-nowrap">2 <small>Star</small></span>
+                                <div class="progress flex-grow-1" role="progressbar" title="2star">
+                                    <div class="progress-bar bg-success" id="2-star-bar"></div>
+                                </div>
+                                <small class="ms-2 text-muted fw-bold" id="2-star-results">0%</small>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="me-2 text-nowrap">1 <small>Star</small></span>
+                                <div class="progress flex-grow-1" role="progressbar" title="1star">
+                                    <div class="progress-bar bg-success" id="1-star-bar"></div>
+                                </div>
+                                <small class="ms-2 text-muted fw-bold" id="1-star-results">0%</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid feedback-results p-3 border-top border-secondary border-3">
+        <h1 class="fw-bold mb-5">Check our the other user's reviews</h1>
+        <div class="row d-flex justify-content-center gap-4" id="feedbackContainer">
+
+            <div class=" col-lg-3 col-md-4 col-sm-11">
+                <div class="card actual-review-card pt-4 p-2 shadow-lg h-100">
+                    <i class="bi bi-quote" id="start-quote"></i>
+                    <img src="" alt="" class="review-pfp placeholder">
+
+                    <div class="card-body mt-5 pt-5 h-100 text-center">
+                        <span class="review-stars fs-4 placeholder">Loading...
+
+
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+
+
+                        </span>
+                        <h4 class="fw-bold text-start col-10 placeholder"></h4>
+                        <p class="review-p mb-3 fst-italic text-start col-12 placeholder"></p>
+                        <h6 class="card-title text-start col-4 placeholder"></h6>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+<!-- FOOTER SECTION  -->
+    <footer class="footer_section p-4">
+
+        <!-- 1st upper section -->
+        <div class="d-flex">
+            <div class="heading col-md-7">
+                <h3>Treat animals the way you treat humans!</h3>
+            </div>
+
+            <div class="update_section col-md-5">
+                <h4>Get in touch with us</h4>
+                <div class="update_buttons">
+                    <form action="" class="d-flex col-md-6">
+                        <input class="form-control col-md-3" id="input_form" input="text"
+                            placeholder="Enter your email"></input>
+                        <button class="btn btn-color col-md-5" id="submit_form" type="button">Sign up <i
+                                class="bi bi-arrow-right"></i></button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of 1st upper section -->
+
+        <!-- 2nd section -->
+        <section class="container-fluid">
+            <div class="d-flex">
+                <div class="contact_info mt-4 col-md-2">
+                    <h5>Contact information</h5>
+                    <ul class="contact_list">
+                        <li><i class="bi bi-telephone-fill"></i> 09677549824</li>
+                        <li><i class="bi bi-envelope-heart-fill"></i> zootastic@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="zoo_info mt-4 col-md-2">
+                    <h5>Zoos are cool</h5>
+                    <ul class="contact_list">
+                        <li><a href="animals.html" class="text-decoration-none text-light">Animals</a></li>
+                        <li><a href="eco_friendly.html" class="text-decoration-none text-light">Eco-friendly practices</a></li>
+                    </ul>
+                </div>
+
+                <div class="whyus_info mt-4 col-md-3">
+                    <h5>Our trustworthiness</h5>
+                    <ul class="contact_list">
+                        <li><a href="about.html" class="text-decoration-none text-light">About us</a></li>
+                        <li><a href="feedback.html" class="text-decoration-none text-light">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="joinus_info mt-4">
+                    <h5>Why you should trust us</h5>
+                    <ul class="contact_list d-flex">
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.tiktok.com/" title="tiktok"
+                                class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-tiktok"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.instagram.com/"
+                                title="instagram" class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-instagram"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.youtube.com/" title="youtube"
+                                class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-youtube"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://x.com/" title="X (twitter)"
+                                class="text-decoration-none text-dark fs-4" title="">
+                                <i class="bi bi-twitter-x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end of 2nd section -->
+    </footer>
+
+    <!-- 3rd bottom section -->
+    <div class="copyright_section text-center p-2">
+        Copyright © 2025 Zootastic All Rights Reserved.
+    </div>
+    <!-- end of 3rd bottom section -->
+
+    </div>
+
+
+        <script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js';
+import { getFirestore, collection, query, doc, setDoc, getDocs, orderBy } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+ 
+ 
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+ 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyCZEyUjY-D2EUn7fcqw0Jo4ujWCGIH2a0Y",
+    authDomain: "zootastic-y9.firebaseapp.com",
+    databaseURL: "https://zootastic-y9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "zootastic-y9",
+    storageBucket: "zootastic-y9.firebasestorage.app",
+    messagingSenderId: "552575686216",
+    appId: "1:552575686216:web:1b13c4032fe92ece63ea7d"
+};
+ 
+ 
+ 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+auth.languageCode = 'en';
+const provider = new GoogleAuthProvider();
+const db = getFirestore(app);
+ 
+ 
+onAuthStateChanged(auth, (user) => {
+    if (user !== null) {
+ 
+        // The user object has basic properties such as display name, email, etc.
+        const displayName = user.displayName;
+        const email = user.email;
+        const photoURL = user.photoURL;
+        const emailVerified = user.emailVerified;
+        console.log(`User is signed in", ${displayName}, ${email}`);
+        console.log(user);
+        // The user's ID, unique to the Firebase project. Do NOT use
+        // this value to authenticate with your backend server, if
+        // you have one. Use User.getToken() instead.
+        const uid = user.uid;
+ 
+        const pfpIcon = document.querySelectorAll(".profile-icon");
+        const usernameDisplay = document.querySelectorAll(".usernameDisplay");
+ 
+        pfpIcon.forEach((element) => {
+            element.src = photoURL;
+        });
+        usernameDisplay.forEach((element) => {
+            element.innerText = displayName;
+        });
+        if (pfpIcon) {
+            pfpIcon.src = photoURL
+        }
+ 
+        const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#">Sign Out</a></li>`;
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        if (dropdownMenu) {
+            dropdownMenu.innerHTML += SignOutBtn;
+        }
+    }
+ 
+    else {
+        // User is signed out
+        // ...
+    }
+})
+ 
+const SignOutBtn = document.getElementById("SignOutBtn")
+if (SignOutBtn) {
+    SignOutBtn.addEventListener('click', () => {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+        }).catch((error) => {
+            // An error happened.
+            console.error(error);
+        });
+ 
+    });
+}
+ 
+ 
+if (document.title == "Sign Up") {
+    SignUpPage();
+}
+if (document.title == "Sign In") {
+    SignInPage();
+}
+if (document.title == "Dashboard") {
+    DashboardPage();
+}
+if (document.title == "Feedback") {
+    feedBackPage();
+}
+function DashboardPage() {
+    const usernameGreeting = document.getElementById("usernameGreeting");
+    const timeOfDay = document.getElementById("timeOfDay");
+ 
+    const adultPrice = document.getElementById("adultPrice");
+    const childPrice = document.getElementById("childPrice");
+    const numberOfAdults = document.getElementById("numberOfAdults");
+    const numberOfChildren = document.getElementById("numberOfChildren");
+    const totalPrice = document.getElementById("totalPrice");
+    adultPrice.addEventListener('input', calculate);
+    childPrice.addEventListener('input', calculate);
+    numberOfAdults.addEventListener('input', calculate);
+    numberOfChildren.addEventListener('input', calculate);
+    function calculate() {
+        if (!adultPrice.value) adultPrice.value = 0;
+        if (!childPrice.value) childPrice.value = 0;
+        if (!numberOfAdults.value) numberOfAdults.value = 0;
+        if (!numberOfChildren.value) numberOfChildren.value = 0;
+        let total = (parseInt(adultPrice.value) * parseInt(numberOfAdults.value)) + (parseInt(childPrice.value) * parseInt(numberOfChildren.value));
+        totalPrice.innerText = `Ks. ${total}`;
+    }
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            const displayName = user.displayName || "User";
+            usernameGreeting.innerText = ` ${displayName}`;
+        } else {
+            window.location.href = "sign-in.html";
+        }
+    });
+    const hours = new Date().getHours();
+    switch (true) {
+        case (hours >= 5 && hours < 12):
+            timeOfDay.innerText = "Good Morning";
+            break;
+        case (hours >= 12 && hours < 17):
+            timeOfDay.innerText = "Good Afternoon";
+            break;
+        case (hours >= 17 && hours < 21):
+            timeOfDay.innerText = "Good Evening";
+            break;
+        default:
+            timeOfDay.innerText = "Good Night";
+            break;
+    }
+ 
+    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' /* The key to an elegant, smooth scroll */
+        });
+    });
+ 
+ 
+}
+ 
+function SignUpPage() {
+ 
+    //Form Elements
+    const usernameInput = document.getElementById("usernameInput");
+    const emailInput = document.getElementById("emailInput");
+    const passwordInput = document.getElementById("passwordInput");
+    const pfpInput = document.getElementById("pfpInput");
+ 
+    const usernameLabel = document.getElementById("usernameLabel");
+    const emailLabel = document.getElementById("emailLabel");
+    const passwordLabel = document.getElementById("passwordLabel");
+ 
+    const usernamePreview = document.getElementById("usernamePreview");
+    const emailPreview = document.getElementById("emailPreview");
+    const pfpPreview = document.getElementById("pfpPreview")
+ 
+    const submitBtn = document.getElementById("submitBtn");
+ 
+    // functions
+    function usernameCheck() {
+        let nameValue = usernameInput.value;
+        displayUsernamePreview();
+ 
+ 
+        // validation
+        if (!nameValue.match(/^[a-zA-Z][a-zA-Z0-9_]{4,19}$/)) {
+            if (!nameValue.match(/^[a-zA-Z]/)) {
+                usernameLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must start with a letter`;
+                usernameInput.classList.add("is-invalid");
+                return false;
+            }
+            if (nameValue.length < 5 || nameValue.length > 20) {
+                usernameLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must be 5-20 characters`;
+                usernameInput.classList.add("is-invalid");
+                return false;
+            }
+            if (!nameValue.match(/^[a-zA-Z0-9_]+$/)) {
+                usernameLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Only letters, numbers, and underscores allowed`;
+                usernameInput.classList.add("is-invalid");
+                return false;
+            }
+        }
+        usernameLabel.innerHTML = `<i class="bi bi-check-square-fill"></i> Valid Username `;
+        usernameInput.classList.remove("is-invalid");
+        return true;
+    }
+    function emailCheck() {
+        displayEmailPreview();
+        //validation
+        if (!emailInput.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+            emailLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Invalid Email Format`;
+            emailInput.classList.add("is-invalid");
+            return false;
+        }
+        emailLabel.innerHTML = `<i class="bi bi-check-square-fill"></i> Valid Email`;
+        emailInput.classList.remove("is-invalid");
+        return true;
+    }
+    function passwordCheck() {
+        // validation
+        if (passwordInput.value.length < 8) {
+            passwordLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must be at least 8 characters`;
+            passwordInput.classList.add("is-invalid");
+            return false;
+        }
+        if (!passwordInput.value.match(/[A-Z]/)) {
+            passwordLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must contain at least one uppercase letter`;
+            passwordInput.classList.add("is-invalid");
+            return false;
+        }
+        passwordInput.classList.remove("is-invalid");
+        passwordLabel.innerHTML = `<i class="bi bi-check-square-fill"></i> Valid Password`
+        return true;
+    }
+    function pfpCheck() {
+        displayPfpPreview();
+    }
+ 
+ 
+    // Display Functions
+    function displayUsernamePreview() {
+        if (!usernameInput.value) { usernamePreview.innerText = "Username"; return; };
+        usernamePreview.innerText = usernameInput.value;
+    }
+    function displayEmailPreview() {
+        if (!emailInput.value) { emailPreview.innerText = "placeholder@gmail.com"; return; };
+        emailPreview.innerText = emailInput.value;
+    }
+    function displayPfpPreview() {
+        if (pfpInput.files && pfpInput.files[0]) {
+            pfpPreview.src = URL.createObjectURL(pfpInput.files[0]);
+        } else {
+            pfpPreview.src = "images/pfinspo.jpg";
+        }
+    }
+ 
+    function validateForm() {
+        // let isUsernameValid = usernameCheck();
+        let isEmailValid = emailCheck();
+        let isPasswordValid = passwordCheck();
+        if (isEmailValid && isPasswordValid) {
+            return true;
+        }
+    }
+    function submitForm() {
+        try {
+            if (!validateForm()) {
+                return false;
+            }
+            const email = emailInput.value;
+            const password = passwordInput.value;
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed up
+                    const user = userCredential.user;
+ 
+                    window.location.href = "dashboard.html";
+                    console.log(user);
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    displayToast(errorMessage);
+                    // ..
+                });
+        }
+        catch (error) {
+            console.error("Error during sign up:", error);
+        }
+    }
+ 
+    function displayToast(message) {
+        const toast = `
+ 
+<div class="alert alert-danger m-4" role="alert">
+  ${message}
+</div>
+ 
+`
+        document.getElementById("sign-section").innerHTML += toast;
+    }
+ 
+    //Event Listeners
+    usernameInput.addEventListener('keyup', usernameCheck);
+    emailInput.addEventListener('keyup', emailCheck);
+    passwordInput.addEventListener('keyup', passwordCheck);
+    pfpInput.addEventListener('change', pfpCheck);
+ 
+    displayUsernamePreview();
+    displayEmailPreview();
+    submitBtn.addEventListener('click', submitForm);
+ 
+ 
+ 
+    const googleSignUp = document.getElementById("googleSignUp");
+ 
+    googleSignUp.addEventListener('click', () => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                // IdP data available using getAdditionalUserInfo(result)
+                // ...
+                window.location.href = "dashboard.html";
+                console.log(user);
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+    })
+ 
+ 
+}
+ 
+function SignInPage() {
+ 
+    //Form Elements
+    const usernameInput = document.getElementById("usernameInput");
+    const emailInput = document.getElementById("emailInput");
+    const passwordInput = document.getElementById("passwordInput");
+ 
+    const usernameLabel = document.getElementById("usernameLabel");
+    const emailLabel = document.getElementById("emailLabel");
+    const passwordLabel = document.getElementById("passwordLabel");
+ 
+    const usernamePreview = document.getElementById("usernamePreview");
+    const emailPreview = document.getElementById("emailPreview");
+ 
+    const submitBtn = document.getElementById("submitBtn");
+ 
+    // functions
+    function usernameCheck() {
+        let nameValue = usernameInput.value;
+        displayUsernamePreview();
+ 
+ 
+        // validation
+        if (!nameValue.match(/^[a-zA-Z][a-zA-Z0-9_]{4,19}$/)) {
+            if (!nameValue.match(/^[a-zA-Z]/)) {
+                usernameLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must start with a letter`;
+                usernameInput.classList.add("is-invalid");
+                return false;
+            }
+            if (nameValue.length < 5 || nameValue.length > 20) {
+                usernameLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must be 5-20 characters`;
+                usernameInput.classList.add("is-invalid");
+                return false;
+            }
+            if (!nameValue.match(/^[a-zA-Z0-9_]+$/)) {
+                usernameLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Only letters, numbers, and underscores allowed`;
+                usernameInput.classList.add("is-invalid");
+                return false;
+            }
+        }
+        usernameLabel.innerHTML = `<i class="bi bi-check-square-fill"></i> Possible Username `;
+        usernameInput.classList.remove("is-invalid");
+        return true;
+    }
+    function emailCheck() {
+        displayEmailPreview();
+        //validation
+        if (!emailInput.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+            emailLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Invalid Email Format`;
+            emailInput.classList.add("is-invalid");
+            return false;
+        }
+        emailLabel.innerHTML = `<i class="bi bi-check-square-fill"></i> Possible Email`;
+        emailInput.classList.remove("is-invalid");
+        return true;
+    }
+    function passwordCheck() {
+        // validation
+        if (passwordInput.value.length < 8) {
+            passwordLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must be at least 8 characters`;
+            passwordInput.classList.add("is-invalid");
+            return false;
+        }
+        if (!passwordInput.value.match(/[A-Z]/)) {
+            passwordLabel.innerHTML = `<i class="bi bi-x-octagon-fill"></i>  Must contain at least one uppercase letter`;
+            passwordInput.classList.add("is-invalid");
+            return false;
+        }
+        passwordInput.classList.remove("is-invalid");
+        passwordLabel.innerHTML = `<i class="bi bi-check-square-fill"></i> Possible Password`
+        return true;
+    }
+    function pfpCheck() {
+        displayPfpPreview();
+    }
+ 
+ 
+    // Display Functions
+    function displayUsernamePreview() {
+        if (!usernameInput.value) { usernamePreview.innerText = "Welcome Back!"; return; };
+        usernamePreview.innerText = usernameInput.value;
+    }
+    function displayEmailPreview() {
+        if (!emailInput.value) { emailPreview.innerText = "It's nice to see you again"; return; };
+        emailPreview.innerText = emailInput.value;
+    }
+    function displayPfpPreview() {
+        if (pfpInput.files && pfpInput.files[0]) {
+            pfpPreview.src = URL.createObjectURL(pfpInput.files[0]);
+        } else {
+            pfpPreview.src = "images/pfinspo.jpg";
+        }
+    }
+ 
+    function validateForm() {
+        // let isUsernameValid = usernameCheck();
+        let isEmailValid = emailCheck();
+        let isPasswordValid = passwordCheck();
+        if (isEmailValid && isPasswordValid) {
+            return true;
+        }
+    }
+    function submitForm() {
+        try {
+            if (!validateForm()) {
+                return false;
+            }
+            const email = emailInput.value;
+            const password = passwordInput.value;
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in
+                    const user = userCredential.user;
+                    // ...
+                    window.location.href = "dashboard.html";
+                    console.log(user);
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    displayToast(errorMessage);
+                });
+        }
+        catch (error) {
+            console.error("Error during sign up:", error);
+        }
+    }
+ 
+    function displayToast(message) {
+        const toast = `
+ 
+<div class="alert alert-danger m-4" role="alert">
+  ${message}
+</div>
+`
+        document.getElementById("sign-section").innerHTML += toast;
+    }
+ 
+    //Event Listeners
+    usernameInput.addEventListener('keyup', usernameCheck);
+    emailInput.addEventListener('keyup', emailCheck);
+    passwordInput.addEventListener('keyup', passwordCheck);
+ 
+    displayUsernamePreview();
+    displayEmailPreview();
+    submitBtn.addEventListener('click', submitForm);
+ 
+ 
+ 
+    const googleSignUp = document.getElementById("googleSignUp");
+ 
+    googleSignUp.addEventListener('click', () => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                // IdP data available using getAdditionalUserInfo(result)
+                // ...
+                window.location.href = "dashboard.html";
+                console.log(user);
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+    })
+ 
+}
+ 
+function feedBackPage() {
+    onAuthStateChanged(auth, (user) => {
+        if (user == null) {
+            alert("You must be signed in to leave feedback.");
+            window.location.href = "sign-in.html";
+            return;
+        }
+ 
+        const displayName = user.displayName;
+        const email = user.email;
+        const uid = user.uid;
+        const userFeedback = doc(db, `userFeedbacks/${user.uid}`);
+        const submitFeedbackBtn = document.getElementById("submitFeedbackBtn");
+        submitFeedbackBtn.addEventListener('click', submitFeedback);
+        renderFeedback();
+ 
+        async function writeFeedback(title, stars, comment) {
+            // Write feedback to Firestore
+            const feedbackData = {
+                username: displayName,
+                profilePicture: user.photoURL,
+                title: title,
+                stars: stars,
+                comment: comment,
+                timestamp: new Date()
+            };
+            try {
+ 
+                await setDoc(userFeedback, feedbackData, { merge: true });
+ 
+            }
+            catch (error) {
+                console.error("Error writing feedback: ", error);
+            }
+        }
+        async function renderFeedback() {
+            // Render feedback from Firestore to HTML
+            const feedbackContainer = document.getElementById("feedbackContainer");
+            feedbackContainer.innerHTML = "";
+            feedbackContainer.innerHTML = `  
+        <div class=" col-lg-3 col-md-4 col-sm-11">
+            <div class="card actual-review-card pt-4 p-2 shadow-lg h-100">
+                <i class="bi bi-quote" id="start-quote"></i>
+                <img src="" alt="" class="review-pfp placeholder">
+ 
+                <div class="card-body mt-5 pt-5 h-100 text-center">
+                    <span class="review-stars fs-4 placeholder">Loading...
+ 
+ 
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+ 
+ 
+                    </span>
+                    <h4 class="fw-bold text-start col-10 placeholder"></h4>
+                    <p class="review-p mb-3 fst-italic text-start col-12 placeholder"></p>
+                    <h6 class="card-title text-start col-4 placeholder"></h6>
+                </div>
+            </div>
+ 
+ 
+        </div>`;
+            const reviews = await query(
+                collection(db, 'userFeedbacks'),
+                orderBy('timestamp')
+            )
+ 
+            const querySnapshot = await getDocs(reviews);
+            feedbackContainer.innerHTML = "";
+            querySnapshot.forEach((feedback) => {
+                const feedbackData = feedback.data();
+                let starsHTML = '';
+                switch (feedbackData.stars) {
+                    case 0:
+                        starsHTML = `<i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>`;
+                        break
+                    case 1:
+                        starsHTML = `<i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>`;
+                        break;
+                    case 2:
+                        starsHTML = `<i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>`;
+                        break;
+                    case 3:
+                        starsHTML = `<i class="bi bi-star-fill filled-star"></i>
+                                    <i class="bi bi-star-fill filled-star"></i>
+                                    <i class="bi bi-star-fill filled-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>
+                                    <i class="bi bi-star-fill empty-star"></i>`;
+                        break;
+                    case 4:
+                        starsHTML = `<i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill empty-star"></i>`;
+                        break;
+                    case 5:
+                        starsHTML = `<i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill "></i>
+                        <i class="bi bi-star-fill "></i>`;
+                        break;
+                }
+                const feedbackCard = `
+                <div class=" col-lg-3 col-md-4 col-sm-11">
+                    <div class="card actual-review-card pt-4 p-2 shadow-lg h-100">
+                                        <i class="bi bi-quote" id="start-quote"></i>
+                    <img src="${feedbackData.profilePicture}"
+                        alt="" class="review-pfp">
+ 
+                    <div class="card-body mt-5 pt-5 h-100 text-center">
+                        <span class="review-stars fs-4">
+                        ${starsHTML}
+                        </span>
+                        <h4 class="fw-bold text-start">${feedbackData.title}</h4>
+                        <p class="review-p mb-3 fst-italic text-start">${feedbackData.comment}</p>
+                        <h6 class="card-title text-start">- ${feedbackData.username}</h6>
+                    </div>
+                    </div>
+ 
+ 
+                </div>
+                `;
+                console.log(feedbackData);
+                feedbackContainer.innerHTML += feedbackCard;
+            });
+ 
+ 
+            calculateScore();
+        }
+        async function submitFeedback(e) {
+            e.preventDefault();
+            const title = document.getElementById("feedbackTitle").value;
+            let stars = 0;
+            if (document.getElementById("1Star").checked) stars = 1;
+            if (document.getElementById("2Star").checked) stars = 2;
+            if (document.getElementById("3Star").checked) stars = 3;
+            if (document.getElementById("4Star").checked) stars = 4;
+            if (document.getElementById("5Star").checked) stars = 5;
+            const comment = document.getElementById("commentInput").value;
+            await writeFeedback(title, stars, comment);
+            await renderFeedback();
+        }
+        async function calculateScore() {
+            const ratingAverage = document.getElementById("RatingAverage");
+            const feedbackQuantity = document.getElementById("feedbackQuantity");
+            const StarIndicators = {
+                5: document.getElementById("5StarIndicator"),
+                4: document.getElementById("4StarIndicator"),
+                3: document.getElementById("3StarIndicator"),
+                2: document.getElementById("2StarIndicator"),
+                1: document.getElementById("1StarIndicator")
+            }
+ 
+            const starResults = {
+                5: document.getElementById("5-star-results"),
+                4: document.getElementById("4-star-results"),
+                3: document.getElementById("3-star-results"),
+                2: document.getElementById("2-star-results"),
+                1: document.getElementById("1-star-results")
+            }
+            const starBars = {
+                5: document.getElementById("5-star-bar"),
+                4: document.getElementById("4-star-bar"),
+                3: document.getElementById("3-star-bar"),
+                2: document.getElementById("2-star-bar"),
+                1: document.getElementById("1-star-bar")
+            };
+ 
+            const reviews = await query(
+                collection(db, 'userFeedbacks'),
+                orderBy('timestamp')
+            )
+ 
+            const querySnapshot = await getDocs(reviews);
+            let totalStars = 0;
+            let reviewCount = 0;
+            let starCounts = {
+                5: 0,
+                4: 0,
+                3: 0,
+                2: 0,
+                1: 0
+            };
+ 
+            querySnapshot.forEach((feedback) => {
+                const feedbackData = feedback.data();
+                totalStars += feedbackData.stars;
+                reviewCount += 1;
+                starCounts[feedbackData.stars] += 1;
+            });
+ 
+            const averageRating = (totalStars / reviewCount).toFixed(1);
+            ratingAverage.innerText = averageRating;
+            feedbackQuantity.innerText = `${reviewCount}`;
+            for (let star = 1; star <= 5; star++) {
+                const percentage = reviewCount === 0 ? 0 : ((starCounts[star] / reviewCount) * 100).toFixed(0);
+                starResults[star].innerText = `${percentage}%`;
+                starBars[star].style.width = `${percentage}%`;
+            }
+ 
+        }
+    });
+ 
+ 
+ 
+}
+
+// for the search 
+let search = document.querySelector(".actual-search");
+let clear = document.querySelector(".clear");
+
+search.onclick = function(){
+    document.querySelector(".search-wrapper").classList.toggle('active');
+}
+clear.onclick = function(){
+    document.getElementById("search-type").value = "";
+}
+
+// ===== SEARCH FUNCTIONALITY =====
+const searchInput = document.getElementById("search-type");
+
+const searchMap = {
+  "eco friendly": "eco_friendly.html",
+  "eco-friendly": "eco_friendly.html",
+  "ecofriendly": "eco_friendly.html",
+  "eco-friendly practices": "eco_friendly.html",
+  "feedback": "feedback.html",
+  "feedbacks": "feedback.html",
+  "about us": "about.html",
+  "about": "about.html",
+  "animals": "animals.html",
+
+  "tiger": "tiger.html",
+  "tigers": "tiger.html",
+  "otter": "otter.html",
+  "otters": "otter.html",
+  "peacock": "peacock.html",
+  "peacocks": "peacock.html",
+  "zebra": "zebra.html",
+  "zebras": "zebra.html",
+  "bear": "bear.html",
+  "bears": "bear.html",
+  "deer": "deer.html",
+  "deers": "deer.html",
+  "snake": "snake.html",
+  "snakes": "snake.html",
+  "monkey": "monkey.html",
+  "monkeys": "monkey.html",
+  "elephant": "elephant.html",
+  "elephants": "elephant.html",
+  "camel": "camel.html",
+  "camels": "camel.html",
+  "hippo": "hippo.html",
+  "hippos": "hippo.html",
+  "crocodile": "crocodile.html",
+  "crocodiles": "crocodile.html"
+};
+
+searchInput.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+
+    const query = searchInput.value.trim().toLowerCase();
+
+    if (searchMap[query]) {
+      window.location.href = searchMap[query];
+    } else {
+      alert("No results found. Try searching animals or eco-friendly topics 🦁🌱");
+    }
+  }
+});
+
+const currentPath = window.location.pathname.toLowerCase();
+    const navLinks = document.querySelectorAll(".my-link");
+
+    navLinks.forEach(link => {
+        const page = link.dataset.page;
+
+        // HOME
+        if (
+            page === "home" &&
+            (currentPath.endsWith("/") || currentPath.includes("index.html"))
+        ) {
+            link.classList.add("active-nav");
+        }
+
+        // ANIMALS (including sub-pages)
+        if (
+            page === "animals" &&
+            (
+                currentPath.includes("animals") ||
+                currentPath.includes("tiger") ||
+                currentPath.includes("otter") ||
+                currentPath.includes("snake") ||
+                currentPath.includes("peacock") ||
+                currentPath.includes("bear") ||
+                currentPath.includes("zebra") ||
+                currentPath.includes("elephant") ||
+                currentPath.includes("deer") ||
+                currentPath.includes("camel") ||
+                currentPath.includes("crocodile") ||
+                currentPath.includes("monkey")
+            )
+        ) {
+            link.classList.add("active-nav");
+        }
+
+        // ECO FRIENDLY
+        if (page === "eco" && currentPath.includes("eco")) {
+            link.classList.add("active-nav");
+        }
+
+        // FEEDBACK
+        if (page === "feedback" && currentPath.includes("feedback")) {
+            link.classList.add("active-nav");
+        }
+
+        // ABOUT
+        if (page === "about" && currentPath.includes("about")) {
+            link.classList.add("active-nav");
+        }
+    });
+
+    </script>
+</body>
+
+</html>

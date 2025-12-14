@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peacocks</title>
+    <link rel="icon" type="image/jpg" href="../images/zootastic_logo.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg custom-nav py-2 sticky-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+
+                <!-- HAMBURGER LEFT -->
+                <button class="navbar-toggler shadow-none border-0 text-light me-2" type="button" title="toggler"
+                    data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../images/zootastic_logo.svg" class="nav-logo me-2 rounded-circle" alt="logo">
+                    <span class="brand-text">Zootastic</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navMenu">
+                <ul class="navbar-nav gap-4">
+
+                    <li class="nav-item"><a class="nav-link my-link" href="../index.html" data-page="home">Home</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link my-link" href="animals.html" data-page="animals">Animals</a>
+                        <div class="mega-dropdown dropdown-menu border-0 shadow-lg p-4">
+
+                            <div class="container-fluid">
+                                <div class="row g-4">
+
+                                    <!-- LEFT SIDE -->
+                                    <div class="col-md-4">
+                                        <div class="p-3 rounded mega-bg-one">
+                                            <h5 class="fw-bold mb-3">Types of Animals</h5>
+
+                                            <a href="tiger.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Tigers</a>
+                                            <a href="otter.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Otters</a>
+                                            <a href="snake.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Snakes</a>
+                                            <a href="peacock.html"
+                                                class="d-block mb-3 text-decoration-none text-light fw-semibold">Peacocks</a>
+
+                                            <a href="animals.html" class="fw-bold text-decoration-none text-light">View all animals
+                                                →</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- RIGHT SIDE -->
+                                    <div class="col-md-8">
+                                        <div class="row g-3">
+                                            <!-- animal card -->
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images7/rd11.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="deer.html" class="fw-bold text-decoration-none">Deers</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images3/ele3.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="elephant.html" class="fw-bold text-decoration-none">Elephants</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images1/bear5.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="bear.html" class="fw-bold text-decoration-none">Bears</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="../images8/zeb1.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="zebra.html" class="fw-bold text-decoration-none">Zebras</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </li>
+
+                    <!-- Eco Desktop Mega -->
+                    <li class="nav-item position-relative eco-parent">
+                        <a class="nav-link my-link" href="eco_friendly.html" data-page="eco">Eco-friendly practices</a>
+                        <!-- MEGA MENU 2.0-->
+                        <div class="eco-dropdown">
+                            <div class="eco-header">
+                                <h4>Explore Eco-Friendly Practices</h4>
+                                <p>Learn how to be healthy, clean, and encouraging!</p>
+                                <a href="eco_friendly.html" class="eco-main-btn">View All Eco Practices →</a>
+                            </div>
+
+                            <div class="eco-cards">
+
+                                <div class="eco-card">
+                                    <!-- <h5>Animal Care</h5> -->
+                                    <p>Animal care practices include providing a benefitcial diet and fresh water, and
+                                        so on.</p>
+                                    <img src="../images6/otter2.jpg"
+                                        class="animal-img" alt="hover4">
+                                </div>
+
+                                <div class="eco-card">
+                                    <!-- <h5>Pest Management</h5> -->
+                                    <p>Pest management practices include regularly clean ups to remove food residues
+                                        that attract pests. </p>
+                                    <img src="../images4/feeding.jpg" class="animal-img"
+                                        alt="hover4">
+                                </div>
+
+                                <div class="eco-card">
+                                    <!-- <h5>Visitor Engagement</h5> -->
+                                    <p>Visitor engagement strategies include integrating photo opportunities to offer
+                                        better experience.</p>
+                                    <img src="../images5/kmss.jpg" class="animal-img" alt="hover4">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link my-link" href="feedback.html" data-page="feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link my-link" href="about.html" data-page="about">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <form class="d-none d-lg-flex me-3 search-wrapper">
+                <div class="icon-search">
+                    <i class="bi bi-search actual-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="search-type">
+                    <i class="bi bi-x clear"></i>
+                </div>
+            </form>
+
+            <!-- ACCOUNT DROPDOWN -->
+            <div class="dropdown account-dropdown">
+                <a href="#" class="d-flex align-items-center dropdown-toggle account-btn" data-bs-toggle="dropdown">
+                    <img src="../images6/pfinspo.jpg" class="profile-icon" alt="profile">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="sign-in.html">Sign In</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MOBILE OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-start custom-offcanvas" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light">Menu</h5>
+            <button class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" title="close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="list-unstyled">
+
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+
+                <!-- ANIMALS ACCORDION (with cards!) -->
+                <li class="mb-3">
+                    <button class="accordion-button collapsed mobile-accordion" data-bs-toggle="collapse"
+                        data-bs-target="#animalsCollapse">Animals</button>
+
+                    <div id="animalsCollapse" class="accordion-collapse collapse">
+                        <div class="p-2 ps-3">
+
+                            <a class="mobile-sub" href="tiger.html">Tigers</a>
+                            <a class="mobile-sub" href="otter.html">Otters</a>
+                            <a class="mobile-sub" href="snake.html">Snakes</a>
+                            <a class="mobile-sub" href="peacock.html">Peacocks</a>
+
+                            <hr class="text-light">
+
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images7/rd11.jpg" class="img-fluid rounded mb-1" alt="hover1">
+                                        <p class="small text-white">Deers</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images3/ele4.jpg" class="img-fluid rounded mb-1" alt="hover2">
+                                        <p class="small text-white">Elephants</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images1/bear5.jpg" class="img-fluid rounded mb-1" alt="hover4">
+                                        <p class="small text-white"> Bears</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="../images8/zeb1.jpg" class="img-fluid rounded mb-1" alt="hover5">
+                                        <p class="small text-white">Zebras</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="text-light">
+                            <a class="mobile-sub" href="animals.html">View All Animals →</a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ECO ACCORDION -->
+                <li class="mb-3">
+                    <button class="accordion-button collapsed mobile-accordion" data-bs-toggle="collapse"
+                        data-bs-target="#ecoCollapse">Eco-friendly practices</button>
+
+                    <div id="ecoCollapse" class="accordion-collapse collapse">
+                        <hr class="text-light">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Animal care practices include providing a
+                                        benefitcial diet and fresh water, and so on.</p>
+                                    <img src="../images6/otter2.jpg"
+                                        alt="planckendael" class="img-fluid rounded mb-1">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Pest management practices include regularly clean
+                                        ups to remove food residues that attract pests.</p>
+                                    <img src="../images4/feeding.jpg"
+                                        class="img-fluid rounded mb-1" alt="cleanup">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Visitor engagement strategies include integrating
+                                        photo opportunities to offer better experience.</p>
+                                    <img src="../images5/kmss.jpg" class="img-fluid rounded mb-1"
+                                        alt="lion">
+                                </div>
+                            </div>
+                            <a class="mobile-sub" href="eco_friendly.html">View All Practices →</a>
+                            <hr class="text-light">
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="feedback.html" class="mobile-link">Feedback</a></li>
+                <li><a href="about.html" class="mobile-link">About Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- banner -->
+   <div class="banner-container">
+    <img src="../images6/peaban.png" alt="banner">
+
+    <div class="banner-title-wrapper d-flex justify-content-between align-items-center flex-wrap">
+        <h1 class="banner-title left-titlemon">Beauty of the feathers!</h1>
+        </div>
+</div>
+<div class="banner-overlay container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <p class="banner-subtextmon">
+            Be captivated by the Indian Peafowl. Explore the science behind their shimmering feathers!
+    </div>
+</div>
+ <!-- first section -->
+  <div class="firstmon">
+    <div class="title-mon">
+        <h1 class="text-white my-5">Understanding the World of Peacocks</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container pb-5">
+        <div class="row gy-4">
+
+            <!-- Left Image -->
+            <div class="col-md-4">
+                <div class="mon-box">
+                    <img src="../images6/peacock2.jpg" alt="peacock">
+                </div>
+            </div>
+
+            <!-- Middle Card -->
+            <div class="col-md-4">
+                <div class="benefit-card text-center">
+                    <h4>What are "Peafowl"?</h4>
+                    <p>Peafowl refers to the species, where the male is a Peacock (known for its stunning train) and the female is a Peahen. They are large, colorful birds of the pheasant family.</p>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-md-4">
+                <div class="mon-box">
+                    <img src="../images6/peacock3.jpg" alt="Forest habitat">
+                </div>
+            </div>
+
+            <!-- Left Card -->
+            <div class="col-md-4">
+                <div class="benefit-card text-center">
+                    <h4>Where Do Peacocks Live?</h4>
+                    <p>The most common species, the Indian Peafowl, is native to the Indian subcontinent. They inhabit wooded areas, forests, and cultivated land near human settlements.</p>
+                </div>
+            </div>
+
+            <!-- Middle Image -->
+            <div class="col-md-4">
+                <div class="mon-box">
+                    <img src="../images6/peacock4.jpg" alt="Monkey planting seeds">
+                </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="col-md-4">
+                <div class="benefit-card text-center">
+                    <h4>The Secrets of the Feathers</h4>
+                    <p>The shimmering colors are not due to pigments but to microscopic, crystal-like structures in the feathers that refract light, a phenomenon called iridescence</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- one type of monkey -->
+    <section class="monkey-spotlight-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-3 monkey-profile">
+                    <img src="../images6/pea.avif" alt="pc" class="monkey-profile-img">
+                    <div>
+                        <h5 class="fw-bold mb-0">The Indian Peafowl (Blue)</h5>
+                        <small class="text-white">Nation animal of India</small>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h4 class="fw-bold mb-3">A Fascinating Look Into the Indian peafowl</h4>
+
+                <!-- Description -->
+                <p class="monkey-description">
+                   The male's spectacular train, which can be up to 5 feet long, is used exclusively to attract a mate. Females select the male with the largest and most colorful display.
+                    <br>
+                    During the display, the peacock vibrates his train, creating a low-frequency sound called "infrasound" that may also play a role in communication, though it is often too low for humans to hear.
+                </p>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-6">
+                <div class="d-flex flex-column flex-md-row gap-3">
+
+                    <!-- Monkey Image -->
+                    <div class="flex-fill monkey-image-wrapper">
+                        <img src="../images6/pea2.jpg" class="monkey-image" alt="pc">
+                    </div>
+
+                    <!-- Monkey Video -->
+                    <div class="flex-fill monkey-video-wrapper">
+                        <video controls class="monkey-video">
+                            <source src="../images5/IMG_7045.MOV" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="monkey-video-title text-center fw-semibold">
+                            Moments before it spreads wings
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- endangered Section -->
+<section class="mandrill-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <div class="blur-info">
+                <div class="d-flex align-items-center mb-3 monkey-profile">
+                    <img src="../images4/gpf.webp" alt="green peafowl Image" class="monkey-profile-img">
+                    <div>
+                        <h5 class="fw-bold mb-0">Green Peafowls</h5>
+                        <small class="text-muted">Native to Southeast Asia Rainforests</small>
+                    </div>
+                </div>
+                <h4 class="fw-bold mb-3">Green Peafowl: A Dazzling Species Facing Extinction</h4>
+
+                <p class="monkey-descriptionn">
+                    Unlike the common Indian Peafowl, the Green Peafowl is classified as Endangered. They are known for their iridescent green and bronze bodies and their large, majestic trains.
+                    <br><br>
+                    Today, Green Peafowl populations are severely serious, mainly due to continuous habitat loss and direct hunting. 
+               </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="mandrill-right">
+                    <div class="mandrill-percentage">
+                        <h2 class="percentage-number">🔴 30%</h2>
+                        <p class="percentage-text mb-0">Estimated Population Decline Over Last 3 Generations</p>
+                    </div>
+                    <div class="mandrill-img-wrapper">
+                        <img src="../images4/gpf2.jpg" alt="gpf" class="mandrill-img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 g-4">
+            <div class="col-lg-6">
+                <div class="info-box">
+                    <h5 class="fw-bold">How Do Baby Peacocks Grow?</h5>
+                    <p class="mb-0">
+                       Baby peacocks, called peachicks, can walk shortly after hatching. They follow their mother closely and learn to find food by watching her. Peachicks gain their adult colors gradually, with males developing their famous train at around 3 years old.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="info-box">
+                    <h5 class="fw-bold">What Do Peacocks Eat?</h5>
+                    <p class="mb-0">
+                        They eat seeds, insects, small reptiles, berries, and plants. Their varied diet helps keep ecosystems balanced by controlling bugs and spreading seeds.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+          <!-- flashcarrds -->
+<div class="flashcard-bg">
+
+  <div class="container text-center mt-5">
+
+    <h2 class="mb-4 flash-title">Peacocks Flashcards</h2>
+
+    <!-- CARD WRAPPER -->
+    <div class="flashcard-container mx-auto glass-box">
+      <div class="flashcard" id="flashcard">
+        <div class="front">
+          <img id="questionImg" src="../images6/pcq1.jpg" alt="question">
+        </div>
+        <div class="back">
+          <img id="answerImg" src="../images6/pcq2.jpg" alt="answer">
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls mt-4 d-flex justify-content-center align-items-center gap-4">
+
+      <button class="btn nav-btn" id="prevBtn">⟵</button>
+
+      <div id="counter" class="fw-bold fs-5 card-counter">1 / 5</div>
+
+      <button class="btn nav-btn" id="nextBtn">⟶</button>
+
+      <button class="btn shuffle-btn" id="shuffleBtn">🔀 Shuffle</button>
+
+    </div>
+
+    <p class="mt-3 flash-hint">Tap the card to flip</p>
+
+  </div>
+
+</div>
+</section>
+
+<!-- FOOTER SECTION  -->
+    <footer class="footer_section p-4">
+
+        <!-- 1st upper section -->
+        <div class="d-flex">
+            <div class="heading col-md-7">
+                <h3>Treat animals the way you treat humans!</h3>
+            </div>
+
+            <div class="update_section col-md-5">
+                <h4>Get in touch with us</h4>
+                <div class="update_buttons">
+                    <form action="" class="d-flex col-md-6">
+                        <input class="form-control col-md-3" id="input_form" input="text"
+                            placeholder="Enter your email"></input>
+                        <button class="btn btn-color col-md-5" id="submit_form" type="button">Sign up <i
+                                class="bi bi-arrow-right"></i></button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of 1st upper section -->
+
+        <!-- 2nd section -->
+        <section class="container-fluid">
+            <div class="d-flex">
+                <div class="contact_info mt-4 col-md-2">
+                    <h5>Contact information</h5>
+                    <ul class="contact_list">
+                        <li><i class="bi bi-telephone-fill"></i> 09677549824</li>
+                        <li><i class="bi bi-envelope-heart-fill"></i> zootastic@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="zoo_info mt-4 col-md-2">
+                    <h5>Zoos are cool</h5>
+                    <ul class="contact_list">
+                        <li><a href="animals.html" class="text-decoration-none text-light">Animals</a></li>
+                        <li><a href="eco_friendly.html" class="text-decoration-none text-light">Eco-friendly practices</a></li>
+                    </ul>
+                </div>
+
+                <div class="whyus_info mt-4 col-md-3">
+                    <h5>Our trustworthiness</h5>
+                    <ul class="contact_list">
+                        <li><a href="about.html" class="text-decoration-none text-light">About us</a></li>
+                        <li><a href="feedback.html" class="text-decoration-none text-light">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="joinus_info mt-4">
+                    <h5>Why you should trust us</h5>
+                    <ul class="contact_list d-flex">
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.tiktok.com/" title="tiktok"
+                                class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-tiktok"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.instagram.com/"
+                                title="instagram" class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-instagram"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.youtube.com/" title="youtube"
+                                class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-youtube"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://x.com/" title="X (twitter)"
+                                class="text-decoration-none text-dark fs-4" title="">
+                                <i class="bi bi-twitter-x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end of 2nd section -->
+    </footer>
+
+    <!-- 3rd bottom section -->
+    <div class="copyright_section text-center p-2">
+        Copyright © 2025 Zootastic All Rights Reserved.
+    </div>
+    <!-- end of 3rd bottom section -->
+
+    </div>
+
+
+   
+   <script>
+        let cards = [
+  { q: "../images6/pcq1.jpg", a: "../images6/pcq2.jpg" },
+  { q: "../images6/pcq3.jpg", a: "../images6/pcq4.jpg" },
+  { q: "../images6/pcq5.jpg", a: "../images6/pcq6.jpg" },
+  { q: "../images6/pcq7.jpg", a: "../images6/pcq8.jpg" },
+  { q: "../images6/pcq9.jpg", a: "../images6/pcq10.jpg" }
+];
+
+let current = 0;
+
+// Elements
+const flashcard = document.getElementById("flashcard");
+const questionImg = document.getElementById("questionImg");
+const answerImg = document.getElementById("answerImg");
+const counter = document.getElementById("counter");
+
+// Load card data
+function loadCard() {
+  questionImg.src = cards[current].q;
+  answerImg.src = cards[current].a;
+  counter.innerText = `${current + 1} / ${cards.length}`;
+}
+
+// First load
+loadCard();
+
+// Flip on click
+flashcard.addEventListener("click", () => {
+  flashcard.classList.toggle("flip");
+});
+
+// Next arrow
+document.getElementById("nextBtn").addEventListener("click", () => {
+  current = (current + 1) % cards.length;
+  flashcard.classList.remove("flip");
+  loadCard();
+});
+
+// Previous arrow
+document.getElementById("prevBtn").addEventListener("click", () => {
+  current = (current - 1 + cards.length) % cards.length;
+  flashcard.classList.remove("flip");
+  loadCard();
+});
+
+// Shuffle button
+document.getElementById("shuffleBtn").addEventListener("click", () => {
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cards[i], cards[j]] = [cards[j], cards[i]];
+  }
+  current = 0;
+  flashcard.classList.remove("flip");
+  loadCard();
+});
+
+const currentPath = window.location.pathname.toLowerCase();
+    const navLinks = document.querySelectorAll(".my-link");
+
+    navLinks.forEach(link => {
+        const page = link.dataset.page;
+
+        // HOME
+        if (
+            page === "home" &&
+            (currentPath.endsWith("/") || currentPath.includes("index.html"))
+        ) {
+            link.classList.add("active-nav");
+        }
+
+        // ANIMALS (including sub-pages)
+        if (
+            page === "animals" &&
+            (
+                currentPath.includes("animals") ||
+                currentPath.includes("tiger") ||
+                currentPath.includes("otter") ||
+                currentPath.includes("snake") ||
+                currentPath.includes("peacock") ||
+                currentPath.includes("bear") ||
+                currentPath.includes("zebra") ||
+                currentPath.includes("elephant") ||
+                currentPath.includes("deer") ||
+                currentPath.includes("camel") ||
+                currentPath.includes("crocodile") ||
+                currentPath.includes("monkey")
+            )
+        ) {
+            link.classList.add("active-nav");
+        }
+
+        // ECO FRIENDLY
+        if (page === "eco" && currentPath.includes("eco")) {
+            link.classList.add("active-nav");
+        }
+
+        // FEEDBACK
+        if (page === "feedback" && currentPath.includes("feedback")) {
+            link.classList.add("active-nav");
+        }
+
+        // ABOUT
+        if (page === "about" && currentPath.includes("about")) {
+            link.classList.add("active-nav");
+        }
+    });
+
+     // for the search 
+let search = document.querySelector(".actual-search");
+let clear = document.querySelector(".clear");
+
+search.onclick = function(){
+    document.querySelector(".search-wrapper").classList.toggle('active');
+}
+clear.onclick = function(){
+    document.getElementById("search-type").value = "";
+}
+
+// ===== SEARCH FUNCTIONALITY =====
+const searchInput = document.getElementById("search-type");
+
+const searchMap = {
+  "eco friendly": "eco_friendly.html",
+  "eco-friendly": "eco_friendly.html",
+  "ecofriendly": "eco_friendly.html",
+  "eco-friendly practices": "eco_friendly.html",
+  "feedback": "feedback.html",
+  "feedbacks": "feedback.html",
+  "about us": "about.html",
+  "about": "about.html",
+  "animals": "animals.html",
+
+  "tiger": "tiger.html",
+  "tigers": "tiger.html",
+  "otter": "otter.html",
+  "otters": "otter.html",
+  "peacock": "peacock.html",
+  "peacocks": "peacock.html",
+  "zebra": "zebra.html",
+  "zebras": "zebra.html",
+  "bear": "bear.html",
+  "bears": "bear.html",
+  "deer": "deer.html",
+  "deers": "deer.html",
+  "snake": "snake.html",
+  "snakes": "snake.html",
+  "monkey": "monkey.html",
+  "monkeys": "monkey.html",
+  "elephant": "elephant.html",
+  "elephants": "elephant.html",
+  "camel": "camel.html",
+  "camels": "camel.html",
+  "hippo": "hippo.html",
+  "hippos": "hippo.html",
+  "crocodile": "crocodile.html",
+  "crocodiles": "crocodile.html"
+};
+
+searchInput.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+
+    const query = searchInput.value.trim().toLowerCase();
+
+    if (searchMap[query]) {
+      window.location.href = searchMap[query];
+    } else {
+      alert("No results found. Try searching animals or eco-friendly topics 🦁🌱");
+    }
+  }
+});
+    </script>
+        <script src="../scriptuser.js" type="module"></script>
+</body>
+
+</html>
