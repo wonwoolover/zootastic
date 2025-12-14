@@ -57,7 +57,7 @@ onAuthStateChanged(auth, (user) => {
             pfpIcon.src = photoURL
         }
 
-        const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#">Sign Out</a></li>`;
+        const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#" onclick="signOut(auth)">Sign Out</a></li>`;
         const DashboardBtn = document.title == "Home" ? `<li><a class="dropdown-item" id="DashboardBtn" href="Pages/dashboard.html"> Dashboard</a></li>`: `<li><a class="dropdown-item" id="DashboardBtn" href="dashboard.html"> Dashboard</a></li>`
         const dropdownMenu = document.querySelector(".dropdown-menu-end");
         if (dropdownMenu) {
@@ -67,23 +67,9 @@ onAuthStateChanged(auth, (user) => {
     }
 
     else {
-        // User is signed out
-        // ...
+    console.log("user is not logged in");
     }
 })
-
-const SignOutBtn = document.getElementById("SignOutBtn")
-if (SignOutBtn) {
-    SignOutBtn.addEventListener('click', () => {
-        signOut(auth).then(() => {
-            // Sign-out successful.
-        }).catch((error) => {
-            // An error happened.
-            console.error(error);
-        });
-
-    });
-}
 
 
 if (document.title == "Sign Up") {
@@ -917,4 +903,5 @@ function feedBackPage() {
 
 
 }
+
 
