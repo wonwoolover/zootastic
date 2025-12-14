@@ -780,9 +780,19 @@ html{
     background-color: #84994F;
     max-width: none !important;
 }
+
 .review-stars {
     color: rgb(250, 204, 0);
+    margin-top: 10px;
+    background-color: #556B2F;
+    padding: 5px;
+    border-radius: 10px;
 }
+
+.empty-star {
+    color: black !important;
+}
+
 .review-pfp {
     border-radius: 150px;
     width: 15vh;
@@ -2931,4 +2941,5 @@ html{
 
 
 }
+
 
