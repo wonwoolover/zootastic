@@ -1,3 +1,5 @@
+document.getElementById("zoosearch").addEventListener("keyup", filterZooCards);
+
 function filterZooCards() {
     const input = document.getElementById("zoosearch").value.toLowerCase();
     const cards = document.querySelectorAll(".zoocard-item");
@@ -6,26 +8,21 @@ function filterZooCards() {
     let visibleCount = 0;
 
     cards.forEach(card => {
-        const dataName = card.dataset.name?.toLowerCase() || "";
-        const title = card.querySelector("h5")?.innerText.toLowerCase() || "";
-        const description = card.querySelector(".funfact")?.innerText.toLowerCase() || "";
+        const dataName = card.dataset.name.toLowerCase();
+        const title = card.querySelector("h5").innerText.toLowerCase();
+        const description = card.querySelector(".funfact").innerText.toLowerCase();
 
-        const searchableText = `${dataName} ${title} ${description}`;
+        const text = `${dataName} ${title} ${description}`;
 
-        if (searchableText.includes(input)) {
-            card.style.display = "";
+        if (text.includes(input)) {
+            card.style.display = "block";
             visibleCount++;
         } else {
             card.style.display = "none";
         }
     });
 
-    // Show / hide "No animals found"
-    if (visibleCount === 0) {
-        noResults.style.display = "block";
-    } else {
-        noResults.style.display = "none";
-    }
+    noResults.style.display = visibleCount === 0 ? "block" : "none";
 }
 
 const currentPath = window.location.pathname.toLowerCase();
@@ -142,4 +139,5 @@ searchInput.addEventListener("keydown", function (e) {
       alert("No results found. Try searching animals or eco-friendly topics 🦁🌱");
     }
   }
+
 });
