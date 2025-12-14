@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/jpg" href="../images/zootastic_logo.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg custom-nav py-2 sticky-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+
+                <!-- HAMBURGER LEFT -->
+                <button class="navbar-toggler shadow-none border-0 text-light me-2" type="button" title="toggler"
+                    data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/zootastic_logo.svg" class="nav-logo me-2 rounded-circle" alt="logo">
+                    <span class="brand-text">Zootastic</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navMenu">
+                <ul class="navbar-nav gap-4">
+
+                    <li class="nav-item"><a class="nav-link my-link" href="index.html" data-page="home">Home</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link my-link" href="Pages/animals.html" data-page="animals">Animals</a>
+                        <div class="mega-dropdown dropdown-menu border-0 shadow-lg p-4">
+
+                            <div class="container-fluid">
+                                <div class="row g-4">
+
+                                    <!-- LEFT SIDE -->
+                                    <div class="col-md-4">
+                                        <div class="p-3 rounded mega-bg-one">
+                                            <h5 class="fw-bold mb-3">Types of Animals</h5>
+
+                                            <a href="Pages/tiger.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Tigers</a>
+                                            <a href="Pages/otter.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Otters</a>
+                                            <a href="Pages/snake.html"
+                                                class="d-block mb-2 text-decoration-none text-light fw-semibold">Snakes</a>
+                                            <a href="Pages/peacock.html"
+                                                class="d-block mb-3 text-decoration-none text-light fw-semibold">Peacocks</a>
+
+                                            <a href="Pages/animals.html" class="fw-bold text-decoration-none text-light">View all animals
+                                                →</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- RIGHT SIDE -->
+                                    <div class="col-md-8">
+                                        <div class="row g-3">
+                                            <!-- animal card -->
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="images7/rd11.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="Pages/deer.html" class="fw-bold text-decoration-none">Deers</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="images3/ele3.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="Pages/elephant.html" class="fw-bold text-decoration-none">Elephants</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="images1/bear5.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="Pages/bear.html" class="fw-bold text-decoration-none">Bears</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="megaani-card p-3 rounded text-center">
+                                                    <img src="images8/zeb1.jpg" class="img-fluid rounded mb-2" alt="">
+                                                    <div class="ani-title">
+                                                        <a href="Pages/zebra.html" class="fw-bold text-decoration-none">Zebras</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </li>
+
+                    <!-- Eco Desktop Mega -->
+                    <li class="nav-item position-relative eco-parent">
+                        <a class="nav-link my-link" href="Pages/eco_friendly.html" data-page="eco">Eco-friendly practices</a>
+                        <!-- MEGA MENU 2.0-->
+                        <div class="eco-dropdown">
+                            <div class="eco-header">
+                                <h4>Explore Eco-Friendly Practices</h4>
+                                <p>Learn how to be healthy, clean, and encouraging!</p>
+                                <a href="Pages/eco_friendly.html" class="eco-main-btn">View All Eco Practices →</a>
+                            </div>
+
+                            <div class="eco-cards">
+
+                                <div class="eco-card">
+                                    <!-- <h5>Animal Care</h5> -->
+                                    <p>Animal care practices include providing a benefitcial diet and fresh water, and
+                                        so on.</p>
+                                    <img src="images6/otter2.jpg"
+                                        class="animal-img" alt="hover4">
+                                </div>
+
+                                <div class="eco-card">
+                                    <!-- <h5>Pest Management</h5> -->
+                                    <p>Pest management practices include regularly clean ups to remove food residues
+                                        that attract pests. </p>
+                                    <img src="images4/feeding.jpg" class="animal-img"
+                                        alt="hover4">
+                                </div>
+
+                                <div class="eco-card">
+                                    <!-- <h5>Visitor Engagement</h5> -->
+                                    <p>Visitor engagement strategies include integrating photo opportunities to offer
+                                        better experience.</p>
+                                    <img src="images5/kmss.jpg" class="animal-img" alt="hover4">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link my-link" href="Pages/feedback.html" data-page="feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link my-link" href="Pages/about.html" data-page="about">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <form class="d-none d-lg-flex me-3 search-wrapper">
+                <div class="icon-search">
+                    <i class="bi bi-search actual-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="search-type">
+                    <i class="bi bi-x clear"></i>
+                </div>
+            </form>
+
+            <!-- ACCOUNT DROPDOWN -->
+            <div class="dropdown account-dropdown">
+                <a href="#" class="d-flex align-items-center dropdown-toggle account-btn" data-bs-toggle="dropdown">
+                    <img src="images6/pfinspo.jpg" class="profile-icon" alt="profile">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="Pages/sign-up.html">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="Pages/sign-in.html">Sign In</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MOBILE OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-start custom-offcanvas" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light">Menu</h5>
+            <button class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" title="close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="list-unstyled">
+
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+
+                <!-- ANIMALS ACCORDION (with cards!) -->
+                <li class="mb-3">
+                    <button class="accordion-button collapsed mobile-accordion" data-bs-toggle="collapse"
+                        data-bs-target="#animalsCollapse">Animals</button>
+
+                    <div id="animalsCollapse" class="accordion-collapse collapse">
+                        <div class="p-2 ps-3">
+
+                            <a class="mobile-sub" href="Pages/tiger.html">Tigers</a>
+                            <a class="mobile-sub" href="Pages/otter.html">Otters</a>
+                            <a class="mobile-sub" href="Pages/snake.html">Snakes</a>
+                            <a class="mobile-sub" href="Pages/peacock.html">Peacocks</a>
+
+                            <hr class="text-light">
+
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="images7/rd11.jpg" class="img-fluid rounded mb-1" alt="hover1">
+                                        <p class="small text-white">Deers</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="images3/ele4.jpg" class="img-fluid rounded mb-1" alt="hover2">
+                                        <p class="small text-white">Elephants</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="images1/bear5.jpg" class="img-fluid rounded mb-1" alt="hover4">
+                                        <p class="small text-white"> Bears</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mobile-card p-2 text-center rounded">
+                                        <img src="images8/zeb1.jpg" class="img-fluid rounded mb-1" alt="hover5">
+                                        <p class="small text-white">Zebras</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="text-light">
+                            <a class="mobile-sub" href="Pages/animals.html">View All Animals →</a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ECO ACCORDION -->
+                <li class="mb-3">
+                    <button class="accordion-button collapsed mobile-accordion" data-bs-toggle="collapse"
+                        data-bs-target="#ecoCollapse">Eco-friendly practices</button>
+
+                    <div id="ecoCollapse" class="accordion-collapse collapse">
+                        <hr class="text-light">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Animal care practices include providing a
+                                        benefitcial diet and fresh water, and so on.</p>
+                                    <img src="images6/otter2.jpg"
+                                        alt="planckendael" class="img-fluid rounded mb-1">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Pest management practices include regularly clean
+                                        ups to remove food residues that attract pests.</p>
+                                    <img src="images4/feeding.jpg"
+                                        class="img-fluid rounded mb-1" alt="cleanup">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="animal-card_mobile p-2 text-start rounded d-flex">
+                                    <p class="small text-white m-2">Visitor engagement strategies include integrating
+                                        photo opportunities to offer better experience.</p>
+                                    <img src="images5/kmss.jpg" class="img-fluid rounded mb-1"
+                                        alt="lion">
+                                </div>
+                            </div>
+                            <a class="mobile-sub" href="Pages/eco_friendly.html">View All Practices →</a>
+                            <hr class="text-light">
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="Pages/feedback.html" class="mobile-link">Feedback</a></li>
+                <li><a href="Pages/about.html" class="mobile-link">About Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner-container">
+        <img src="images1/ban.png" alt="banner">
+
+        <div class="banner-title-wrapper d-flex justify-content-between align-items-center flex-wrap">
+            <h1 class="banner-title left-title">Open wide for</h1>
+            <h1 class="banner-title right-title">Wildlife Wisdom!</h1>
+        </div>
+    </div>
+    <div class="banner-overlay container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <p class="banner-subtext">
+                Learn. Explore. Protect. Learn simple eco-friendly habits that help
+                revitalize Yangon Zoo park.
+            </p>
+
+            <div class="buttonsban">
+                <a href="Pages/animals.html" class="btn btn-discover">Discover Wildlife Facts</a>
+                <a href="Pages/eco_friendly.html" class="btn btn-eco">Take Eco-Friendly Actions</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel -->
+<section class="zoo-showcase">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-4 zoo-left">
+                <h1 class="zoo-title">
+                   Discover the Wildlife...<br> Learn about Animals!
+                </h1>
+
+                <p class="zoo-desc">
+                    Discover fascinating animal facts from Yangon Zoo Park while learning
+                    how eco-friendly habits help protect habitats, conserve wildlife,
+                    and inspire a greener, more responsible community.
+                </p>
+
+                <a href="Pages/animals.html" class="zoo-btn">
+                    Explore All Animals <span class="btn-arrow">→</span>
+                </a>
+            </div>
+
+            <!-- RIGHT CAROUSEL -->
+            <div class="col-lg-8 zoo-carousel-right">
+
+                <section class="animal-theme">
+                    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                        <p class="animal-count" id="animalPage">01 / 04</p>
+                    </div>
+
+                    <div id="animalCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center gap-4">
+                                    <div class="animal-card small-card">
+                                        <img src="images5/mon10.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Monkeys</h3>
+                                            <p>Agile and social creatures</p>
+                                            <a href="Pages/monkey.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card big-card">
+                                        <img src="images1/bear3.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Bears</h3>
+                                            <p>Strong mammals shaping ecosystems</p>
+                                            <a href="Pages/bear.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card small-card">
+                                        <img src="images4/hippo3.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Hippopotamus</h3>
+                                            <p>Powerful river guardians</p>
+                                            <a href="Pages/hippo.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center gap-4">
+                                    <div class="animal-card small-card">
+                                        <img src="images2/croc.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Crocodiles</h3>
+                                            <p>Ancient reptile survivors</p>
+                                            <a href="Pages/crocodile.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card big-card">
+                                        <img src="images6/peacock.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Peacocks</h3>
+                                            <p>Nature’s vibrant artists</p>
+                                            <a href="Pages/peacock.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card small-card">
+                                        <img src="images3/ele2.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Elephants</h3>
+                                            <p>Gentle giants of the wild</p>
+                                            <a href="Pages/elephant.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center gap-4">
+                                    <div class="animal-card small-card">
+                                        <img src="images8/tiger5.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Tigers</h3>
+                                            <p>Powerful striped hunters</p>
+                                            <a href="Pages/tiger.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card big-card">
+                                        <img src="images8/zeb3.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Zebras</h3>
+                                            <p>Social grassland dwellers</p>
+                                            <a href="Pages/zebra.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card small-card">
+                                        <img src="images2/cam1.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Camels</h3>
+                                            <p>Desert survival experts</p>
+                                            <a href="Pages/camel.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 4 -->
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center gap-4">
+                                    <div class="animal-card small-card">
+                                        <img src="images7/rd5.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Deer</h3>
+                                            <p>Graceful forest wanderers</p>
+                                            <a href="Pages/deer.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card big-card">
+                                        <img src="images7/snake1.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Snakes</h3>
+                                            <p>Important ecosystem balancers</p>
+                                            <a href="Pages/snake.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="animal-card small-card">
+                                        <img src="images6/otter1.jpg" class="animal-photo">
+                                        <div class="animal-hover">
+                                            <h3>Otters</h3>
+                                            <p>Playful water protectors</p>
+                                            <a href="Pages/otter.html" class="btn-read">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- CONTROLS -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#animalCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#animalCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                        <!-- INDICATORS -->
+                        <div class="carousel-indicators animal-indicators">
+                            <button data-bs-target="#animalCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button data-bs-target="#animalCarousel" data-bs-slide-to="1"></button>
+                            <button data-bs-target="#animalCarousel" data-bs-slide-to="2"></button>
+                            <button data-bs-target="#animalCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- eco friendly section  -->
+     <div class="banner_two_container">
+    <div class="centered">
+        <div class="blur-box">
+            <h2 class="text-light fw-bold p-3 ecoo">
+                Come Explore Our Tips <br> on Foster Healthy Practices
+            </h2>
+            <a href="Pages/ecofriendly.html" class="btn_eco_banner ecooo text-decoration-none">
+                Discover More Tips
+            </a>
+        </div>
+
+    </div>
+    <img src="images6/pig.jpg" class="banner_two" alt="zoo">
+</div>
+
+    <div class="container-fluid container_eco shadow-lg">
+        <div class="container floating_eco col-lg-12 col-sm-12 col-md-12 text-light">
+            <div class="row justify-content-center mobile_eco_card">
+
+                <div class="col-lg-3 col-sm-12 col-md-3 eco_banner_card p-4">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="images7/plant.jpg"
+                                alt="A native plant in Myanmar">
+                        </div>
+
+                        <div class="flip_card_back p-4">
+                            <h5 class="eco_title">Grow native plants</h5>
+                            <p>Zoos should grow native flowers and plants such as jasmine, yellow trumpetbush, desert
+                                rose, and orchids to increase long-life, decrease volume of water and lower
+                                maintainence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-3 eco_banner_card p-4">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="images2/cleaning.jpg"
+                                alt="People cleaning up the zoo">
+                        </div>
+
+                        <div class="flip_card_back p-4">
+                            <h5 class="eco_title">Leave no trace</h5>
+                            <p>Visitors who come to the park should collect their own trash and not litter. The zoos
+                                should have rules concerning the matter to provide better home for animals as well as
+                                photo opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-3 eco_banner_card p-4">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="images8/tras.jpg"
+                                alt="Clearly labeled trash cans">
+                        </div>
+
+                        <div class="flip_card_back p-4">
+                            <h5 class="eco_title">Provide labeled recycling</h5>
+                            <p>The zoos should display trash cans with clear labels; for instance, a bin for plastics,
+                                another bin for glass, etc. This way, the zoo can easily empty the trash and promote
+                                cleanliness as well as beauty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHAT WE OFFER -->
+<div class="container-fluid" id="what-we-offer">
+
+    <!-- ROW 1 -->
+    <div class="row align-items-center py-4 px-4">
+
+        <!-- TEXT -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="offer-info">
+
+               <h1 class="fw-bold mb-3 mt-5">What do we offer?</h1><br>
+
+<p>
+    Our website is created to educate, inspire, and guide visitors through the
+    natural beauty and wildlife of Yangon Zoo while promoting environmental responsibility.
+</p>
+
+<p>
+    We provide detailed animal knowledge, including habitats, behaviors, diets,
+    and conservation importance. This helps visitors understand not only what
+    animals they are seeing, but why protecting them matters.
+</p>
+
+<p>
+    In addition, we share eco-friendly tips and sustainable lifestyle practices
+    that visitors can apply both inside and outside the zoo, encouraging long-term
+    environmental awareness.
+</p>
+
+<p>
+    Lastly, we present thoughtful suggestions and improvement ideas aimed at
+    enhancing animal welfare, visitor experience, and the overall sustainability
+    of Yangon Zoo.
+</p>
+
+            </div>
+        </div>
+
+        <!-- IMAGES (UNCHANGED) -->
+        <div class="col-lg-6 col-md-12 col-sm-12 offer-images">
+
+            <img src="images1/bird1.jpg"
+                alt="8,500+ peacock flying"
+                class="img-fluid col-12 shadow-lg mb-4 offer-image2 offer-image">
+        </div>
+
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row align-items-center py-4 px-4">
+
+        <!-- IMAGES (UNCHANGED) -->
+        <div class="col-lg-6 col-md-12 col-sm-12 offer-images">
+            <img src="images8/us2.jpg"
+                alt="zoo environment"
+                class="img-fluid col-12 shadow-lg mb-4 offer-image4 offer-image">
+        </div>
+
+        <!-- TEXT -->
+        <div class="col-lg-6 col-md-12 col-sm-12 text-lg-end">
+            <div class="offer-info">
+
+                <h1 class="fw-bold mb-3">What else do we offer?</h1><br>
+
+<p>
+    Our platform goes beyond information by offering interactive and user-focused
+    features designed to keep visitors engaged.
+</p>
+
+<p>
+    By creating an account, users gain access to zoo event calendars, special
+    programs, upcoming exhibitions, and important announcements.
+</p>
+
+<p>
+    These features help visitors stay updated on conservation efforts, educational
+    activities, and community-driven initiatives happening within the zoo.
+</p>
+
+<p>
+    We also encourage feedback and participation, allowing users to share ideas,
+    suggestions, and opinions that can contribute to positive change.
+</p>
+
+<p>
+    Through these tools, we aim to build a connected, informed, and environmentally
+    conscious community that supports wildlife protection and sustainable tourism.
+</p>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- feedback -->
+    <div class="review green text-light p-5 g-3 d-flex justify-content-center row align-items-center">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h2 class="fw-bold">But what are our users saying?</h2>
+            <p>Don't just take our word for it! Be assured of our expertise with these insightful reviews!</p>
+
+            <img src="https://pngimg.com/d/tiger_PNG23242.png" alt="" class="img-fluid" id="cloud">
+
+            <a href="Pages/feedback.html" class="text-decoration-none"><button class="d-block btn btn-outline-light ms-5">Check out more!</button></a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-evenly row">
+
+
+
+            <div class="card pt-4 col-lg-6  col-md-6 col-sm-12 review-card p-2 shadow-lg">
+                <i class="bi bi-quote" id="start-quote"></i>
+                <img src="images6/nhehe.jpg"
+                    alt="" class="review-pfp">
+
+                <div class="card-body h-100 text-center">
+                    <span class="review-stars fs-4">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </span>
+                    <h4 class="fw-bold text-end">Trustworthy service!</h4>
+                    <p class="review-p mb-3 fst-italic text-end">It is very nice and definitely they offer trustworthy
+                        service which I really enjoy! I have become productive and been saving the zoos so they
+                        become cleaner.</p>
+                    <h6 class="card-title text-end">- Ni Ni San</h6>
+                </div>
+            </div>
+
+
+            <div class="card pt-4 col-lg-6  col-md-6 col-sm-12 review-card review-card-2 p-2 shadow-lg ms-sm-5 ms-lg-0 ms-md-0">
+                <i class="bi bi-quote" id="start-quote"></i>
+                <img src="images1/ahehe.jpg"
+                    alt="" class="review-pfp">
+
+                <div class="card-body h-100 text-center">
+                    <span class="review-stars fs-4">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </span>
+                    <h4 class="fw-bold text-end">Highly recommended!</h4>
+<p class="review-p mb-3 fst-italic text-end">
+    The experience has been amazing and very reliable. I learned so much about wildlife
+    conservation and it motivated me to take better care of the environment around me.
+</p>
+                    <h6 class="card-title text-end">- Myo Myo San</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION  -->
+    <footer class="footer_section p-5">
+
+        <!-- 1st upper section -->
+        <div class="d-flex">
+            <div class="heading col-lg-7 col-md-6 fw-bold">
+                <h2>Treat animals the way you treat humans!</h2>
+            </div>
+
+            <div class="update_section col-md-4">
+                <h4>Get in touch with us</h4>
+                <div class="update_buttons">
+                    <form action="" class="d-flex col-lg-6">
+                        <input class="form-control col-lg-4 col-md-3" id="input_form" input="text"
+                            placeholder="Enter your email"></input>
+                        <button class="btn btn-color col-lg-6 col-md-5" id="submit_form" type="button">Sign up <i
+                                class="bi bi-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end of 1st upper section -->
+
+        <!-- 2nd section -->
+        <section class="container-fluid">
+            <div class="d-flex">
+                <div class="contact_info mt-4 col-lg-2 col-md-3">
+                    <h5>Contact information</h5>
+                    <ul class="contact_list">
+                        <li><i class="bi bi-telephone-fill"></i> 09677549824</li>
+                        <li><i class="bi bi-envelope-heart-fill"></i> zootastic@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="zoo_info mt-4 col-lg-2 col-md-3">
+                    <h5>Zoos are cool</h5>
+                    <ul class="contact_list">
+                        <li><a href="Pages/animals.html" class="text-decoration-none text_color">Animals</a></li>
+                        <li><a href="Pages/eco_friendly.html" class="text-decoration-none text_color">Eco-friendly practices</a></li>
+                    </ul>
+                </div>
+
+                <div class="whyus_info mt-4 col-lg-3 col-md-3">
+                    <h5>Our trustworthiness</h5>
+                    <ul class="contact_list">
+                        <li><a href="Pages/about.html" class="text-decoration-none text_color">About us</a></li>
+                        <li><a href="Pages/feedback.html" class="text-decoration-none text_color">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="joinus_info mt-4 col-md-3">
+                    <h5 class="col-md-12">Why you should trust us</h5>
+                    <ul class="contact_list d-flex col-md-12">
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.tiktok.com/" title="tiktok"
+                                class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-tiktok"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.instagram.com/"
+                                title="instagram" class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-instagram"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://www.youtube.com/" title="youtube"
+                                class="text-decoration-none text-dark fs-4">
+                                <i class="bi bi-youtube"></i></a>
+                        </li>
+
+                        <li class="pt-2 circle_social rounded-circle"><a href="https://x.com/" title="X (twitter)"
+                                class="text-decoration-none text-dark fs-4" title="">
+                                <i class="bi bi-twitter-x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end of 2nd section -->
+    </footer>
+
+    <!-- 3rd bottom section -->
+    <div class="copyright_section text-center p-2">
+        Copyright © 2025 Zootastic All Rights Reserved.
+    </div>
+    <!-- end of 3rd bottom section -->
+
+
+    <script src="scriptzoo.js" type="module"></script>
+        <script src="scriptuser.js" type="module"></script>
+</body>
+
+</html>
