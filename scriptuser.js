@@ -37,7 +37,7 @@ onAuthStateChanged(auth, (user) => {
         const email = user.email;
         const photoURL = user.photoURL;
         const emailVerified = user.emailVerified;
-        console.log(`User is signed in", ${displayName}, ${email}`);
+        console.log(`User is ed in", ${displayName}, ${email}`);
         console.log(user);
         // The user's ID, unique to the Firebase project. Do NOT use
         // this value to authenticate with your backend server, if
@@ -57,7 +57,7 @@ onAuthStateChanged(auth, (user) => {
             pfpIcon.src = photoURL
         }
 
-        const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#" onclick="signOut(auth)">Sign Out</a></li>`;
+        const OutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#" onclick="signOut(auth)">Sign Out</a></li>`;
         const DashboardBtn = document.title == "Home" ? `<li><a class="dropdown-item" id="DashboardBtn" href="Pages/dashboard.html"> Dashboard</a></li>`: `<li><a class="dropdown-item" id="DashboardBtn" href="dashboard.html"> Dashboard</a></li>`
         const dropdownMenu = document.querySelector(".dropdown-menu-end");
         if (dropdownMenu) {
@@ -685,7 +685,7 @@ function feedBackPage() {
     onAuthStateChanged(auth, (user) => {
         if (user == null) {
             alert("You must be signed in to leave feedback.");
-            window.location.href = "sign-in.html";
+            window.location.href = "sign-up.html";
             return;
         }
 
@@ -903,5 +903,6 @@ function feedBackPage() {
 
 
 }
+
 
 
