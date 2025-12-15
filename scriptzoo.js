@@ -93,7 +93,7 @@ const searchMap = {
   "feedbacks": "Pages/feedback.html",
   "about us": "Pages/about.html",
   "about": "Pages/about.html",
-  "animals": "animals.html",
+  "animals": "Pages/animals.html",
 
   "tiger": "Pages/tiger.html",
   "tigers": "Pages/tiger.html",
@@ -134,6 +134,7 @@ searchInput.addEventListener("keydown", function (e) {
     }
   }
 });
+
 
 
 
