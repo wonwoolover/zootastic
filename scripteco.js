@@ -323,6 +323,9 @@ function createStudentElement({name, image}) {
     studentList.append(studentDiv);
 
     studentList.classList.add("eco-card-border");
+    studentList.classList.add("col-12");
+    studentList.classList.add("col-lg-4");
+    studentList.classList.add("col-md-6");
 }
 
 studentForm.onsubmit = e=>{
@@ -435,5 +438,6 @@ leftBox.addEventListener("drop", function(){
             link.classList.add("active-nav");
         }
     });
+
 
 
