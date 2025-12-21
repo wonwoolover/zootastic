@@ -1248,7 +1248,7 @@ body {
     border-radius:50%;
 }
 /* offcanvas */
-#offcanvasEcoOtter, #offcanvasEcoMonkey, #offcanvasEcoTiger, #offcanvasEcoElephant{
+#offcanvasEcoOtter, #offcanvasEcoMonkey, #offcanvasEcoTiger, #offcanvasEcoElephant, #offcanvasEcoCroc, #offcanvasEcoPea, #offcanvasEcoHippo, #offcanvasEcoDeer, #offcanvasEcoCamel, #offcanvasEcoSnake, #offcanvasEcoBear, #offcanvasEcoZebra{
     background-color: #c6d870;
 }
 .picture-canvas{
@@ -1637,4 +1637,5 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+
 }
