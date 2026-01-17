@@ -7,6 +7,9 @@ body {
     transition: 0.5s ease-in-out;
     overflow-x: hidden;
 }
+html{
+    scrollbar-color:  #4C763B #B0CE88;
+}
 *{
     margin: 0;
     padding: 0;
@@ -1639,3 +1642,4 @@ body {
     }
 
 }
+
