@@ -28,7 +28,6 @@ auth.languageCode = 'en';
 const provider = new GoogleAuthProvider();
 const db = getFirestore(app);
 
-
 onAuthStateChanged(auth, (user) => {
     if (user !== null) {
 
@@ -48,7 +47,11 @@ onAuthStateChanged(auth, (user) => {
         const usernameDisplay = document.querySelectorAll(".usernameDisplay");
 
         pfpIcon.forEach((element) => {
-            element.src = photoURL;
+            if (photoURL === null) {
+                element.src = "../images6/pfinspo.jpg"
+            } else {
+                element.src = photoURL;
+            }
         });
         usernameDisplay.forEach((element) => {
             element.innerText = displayName;
@@ -57,20 +60,63 @@ onAuthStateChanged(auth, (user) => {
             pfpIcon.src = photoURL
         }
 
-        const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#" onclick="signOut(auth)">Sign Out</a></li>`;
-        const DashboardBtn = document.title == "Home" ? `<li><a class="dropdown-item" id="DashboardBtn" href="Pages/dashboard.html"> Dashboard</a></li>`: `<li><a class="dropdown-item" id="DashboardBtn" href="dashboard.html"> Dashboard</a></li>`
+        // const SignOutBtn = `<li><a class="dropdown-item" id="SignOutBtn" href="#" onclick="signOut(auth)">Sign Out</a></li>`;
+        // const DashboardBtn = document.title == "Home" ? `<li><a class="dropdown-item" id="DashboardBtn" href="Pages/dashboard.html"> Dashboard</a></li>` : `<li><a class="dropdown-item" id="DashboardBtn" href="dashboard.html"> Dashboard</a></li>`
+        // const dropdownMenu = document.querySelector(".dropdown-menu-end");
+        // if (dropdownMenu) {
+        //     dropdownMenu.innerHTML += SignOutBtn;
+        //     dropdownMenu.innerHTML += DashboardBtn;
+        // }
+
         const dropdownMenu = document.querySelector(".dropdown-menu-end");
         if (dropdownMenu) {
-            dropdownMenu.innerHTML += SignOutBtn;
-            dropdownMenu.innerHTML += DashboardBtn;
+            const signOutLi = document.createElement('li');
+            signOutLi.innerHTML = `<a class="dropdown-item" id="SignOutBtn" href="#">Sign Out</a>`;
+
+            const dashboardLi = document.createElement('li');
+            const dashboardHref = document.title === "Home" ? "Pages/dashboard.html" : "dashboard.html";
+            dashboardLi.innerHTML = `<a class="dropdown-item" id="DashboardBtn" href="${dashboardHref}">Dashboard</a>`;
+
+            dropdownMenu.appendChild(signOutLi);
+            dropdownMenu.appendChild(dashboardLi);
+
+            document.getElementById("SignOutBtn").addEventListener("click", (e) => {
+                e.preventDefault();
+                signOut(auth).then(() => {
+                    alert("Signed out successfully.");
+                    window.location.href = "index.html";
+                }).catch((error) => {
+                    console.error("Sign out error:", error);
+                });
+            });
         }
     }
 
     else {
-    console.log("user is not logged in");
+        console.log("user is not logged in");
     }
 })
 
+// function signOutOfAccount() {
+//     signOut(auth).then(() => {
+//         // Sign-out successful.
+//     }).catch((error) => {
+//         // An error happened.
+//         console.error(error);
+//     });
+
+// }
+// const SignOutBtn = document.getElementById("SignOutBtn")
+// if (SignOutBtn) {
+//     SignOutBtn.addEventListener('click', () => {
+//             signOut(auth).then(() => {
+//             // Sign-out successful.
+//         }).catch((error) => {
+//             // An error happened.
+//             console.error(error);
+//         });
+//     });
+// }
 
 if (document.title == "Sign Up") {
     SignUpPage();
@@ -312,7 +358,7 @@ function DashboardPage() {
     document.getElementById('scrollToTopBtn').addEventListener('click', function () {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' /* The key to an elegant, smooth scroll */
+            behavior: 'smooth'
         });
     });
 
@@ -594,7 +640,7 @@ function SignInPage() {
         if (pfpInput.files && pfpInput.files[0]) {
             pfpPreview.src = URL.createObjectURL(pfpInput.files[0]);
         } else {
-            pfpPreview.src =  document.title !== "Home" ? "../images6/pfinspo.jpg" : "images6/pfinspo.jpg";
+            pfpPreview.src = document.title !== "Home" ? "../images6/pfinspo.jpg" : "images6/pfinspo.jpg";
         }
     }
 
@@ -798,11 +844,13 @@ function feedBackPage() {
                         <i class="bi bi-star-fill "></i>`;
                         break;
                 }
+                let feedbackPfp = feedbackData.profilePicture === null ? "../images6/pfinspo.jpg" : feedbackData.profilePicture;
+                let feedbackUsername = feedbackData.username === null ? "Anonymous (Signed in w/ email)" : feedbackData.username;
                 const feedbackCard = `
                 <div class=" col-lg-3 col-md-4 col-sm-11">
                     <div class="card actual-review-card pt-4 p-2 shadow-lg h-100">
                                         <i class="bi bi-quote" id="start-quote"></i>
-                    <img src="${feedbackData.profilePicture}"
+                    <img src="${feedbackPfp}"
                         alt="" class="review-pfp">
 
                     <div class="card-body mt-5 pt-5 h-100 text-center">
@@ -811,7 +859,7 @@ function feedBackPage() {
                         </span>
                         <h4 class="fw-bold text-start">${feedbackData.title}</h4>
                         <p class="review-p mb-3 fst-italic text-start">${feedbackData.comment}</p>
-                        <h6 class="card-title text-start">- ${feedbackData.username}</h6>
+                        <h6 class="card-title text-start">- ${feedbackUsername}</h6>
                     </div>
                     </div>
 
